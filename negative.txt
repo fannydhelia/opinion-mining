@@ -1,25 +1,36 @@
-#1 keskmiselt negatiivsed +2
+#1 keskmiselt negatiivsed -2
 aeglane
 arg
 dramaatiline
+eba_meeldiv
+eba_professionaalne
 enese_keskne
 haiglane
 halb
 hapu
+homofoobne
 hooletu
 hoolimatu
+igav
 imal
+inetu
+jäine
 kahtlane
+karm
 kartlik
+keeruline
 kehv
 kerglane
 kibe
 kidur
 kole
 kuri
+kõle
+külm
 laiduväärt
 laisk
 lapsik
+liialt
 liiga
 litsakas
 loll
@@ -27,11 +38,14 @@ lootusetu
 madal
 mage
 metsik
+mossis
 murelik
 muutlik
+mõttetu
 nadi
 negatiivne
 niru
+nõme
 nõrk
 paha
 paheline
@@ -41,18 +55,22 @@ pikaldane
 rumal
 räpane
 sant
+surmav
 sünge
+tarbetu
 tige
 tujukas
 tujutu
 tundetu
 tühine
 uje
+umbne
+vaevaline
 vastik
 väiklane
 ülbe
 ülem_eelik
-#3 tugevalt negatiivsed +4
+#3 tugevalt negatiivsed -4
 hirmus
 hull
 jäle
@@ -60,4 +78,6 @@ kohutav
 räige
 räme
 rõve
+sitt
+tülgasta=v
 õudne

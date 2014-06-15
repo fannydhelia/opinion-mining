@@ -1,12 +1,10 @@
-#1 eituseba
-ei
-mitte
-ära
+#1 eitusära
 #2 laengu vähendajad
 kaunis
 küllaltki
 natuke
 pigem
+piisavalt
 pär
 veidi
 vähe
@@ -21,6 +19,7 @@ hull
 jumal
 kohutavalt
 kurat
+kõige
 meeletult
 nii
 pagan

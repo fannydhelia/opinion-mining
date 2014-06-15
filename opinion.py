@@ -55,12 +55,12 @@ a.close()
 
 t3mesta = "pfe/bin/t3mesta"
 dictpath = "pfe/data/t3mesta"
-print("Lihtne eesti keele meelestatuse analüüsi tööriist\n")
+print("\nLIHTNE EESTI KEELE MEELESTATUSE ANALÜÜSI TÖÖRIIST\n")
 print("Vaikimisi t3mesta asukoht: ", t3mesta)
-print("\nVaikimisi t3mesta sõnastike asukoht: ", dictpath)
+print("Vaikimisi t3mesta sõnastike asukoht: ", dictpath)
 
 while True:
-    choice = input("\n\n1 - Lisa sõnu sõnaraamatusse\n"
+    choice = input("\n1 - Lisa sõnu sõnaraamatusse\n"
                    "2 - Arvuta meelestatuse skoore\n"
                    "3 - Muuda t3mesta asukohta\n"
                    "4 - Muuda t3mesta sõnastike asukohta\n"
@@ -81,10 +81,15 @@ while True:
             if which.lower() == 't':
                 break
             addword = input("Sisesta sõna:\n")
+            addword = addword.strip().lower()
             s2 = addword.encode('utf-8')
             p = Popen([t3mesta, "-path", dictpath], stdout=PIPE, stdin=PIPE)
             stdout = p.communicate(s2)[0]
-            phrase = stdout.decode("utf-8")
+            s3 = stdout.decode("utf-8")
+            parts = s3.split("\n")
+            for line in parts:
+                if line[-2:] == "//":
+                    addword = line.split("+")[0].strip()
             if which == '1':
                 pos1.add(addword)
             elif which == '2':
@@ -108,8 +113,8 @@ while True:
         answers[3] = ["Võiks olla parem?", "Pigem negatiivne"]
         answers[4] = ["Päris kriitiline, või mis?", "Wow, kui kuri!", "Üsna depressiivne.."]
 
-        print("T - tagasi")
-        s = input("\nSinu arvamus:\n")
+        print("\nT - tagasi")
+        s = input("Sinu arvamus:\n")
         finish = False
         while s:
             if s.lower() == 't':
@@ -282,8 +287,8 @@ while True:
             else:
                 print(random.choice(answers[4]))
 
-            print("T - tagasi")
-            s = input("\nSinu arvamus:\n")
+            print("\nT - tagasi")
+            s = input("Sinu arvamus:\n")
     elif choice == '3':
         t3mesta = input("T3mesta asukoht:\n")
     elif choice == '4':
