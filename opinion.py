@@ -55,8 +55,8 @@ while line:
 a.close()
 
 #Paths to t3mesta and its dictionaries
-t3mesta = "pfe/bin/t3mesta"
-dictpath = "pfe/data/t3mesta"
+t3mesta = "/usr/local/materjalid/vaino/korpuslingvistika/prog-lin64/t3mesta"
+dictpath = "/usr/local/materjalid/vaino/korpuslingvistika/prog-lin64/"
 
 print("\nLIHTNE EESTI KEELE MEELESTATUSE ANALÜÜSI TÖÖRIIST\n")
 print("Vaikimisi t3mesta asukoht: ", t3mesta)
